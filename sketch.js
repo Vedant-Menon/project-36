@@ -21,6 +21,7 @@ function setup() {
 database= firebase.database();
 createCanvas(1000, 400);
 
+foodObj=new Food()
 dog= createSprite(750,200,20,20)
 dog.addImage(dogImg)
 dog.scale=0.15;
@@ -61,7 +62,7 @@ if(lastFed>=12){
   text("Last Fed :"+lastFed+"AM",350,25)
 }
 
-//foodObj.display()
+foodObj.display()
 drawSprites();
 }
 
